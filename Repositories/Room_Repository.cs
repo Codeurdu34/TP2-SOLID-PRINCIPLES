@@ -2,7 +2,7 @@ namespace HotelReservation.Repositories;
 
 using HotelReservation.Models;
 
-public class RoomRepository
+public class Room_Repository
 {
     private static readonly List<Room> _rooms = new()
     {

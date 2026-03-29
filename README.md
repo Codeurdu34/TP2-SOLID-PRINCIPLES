@@ -68,7 +68,7 @@ Cette classe melange trois types de preoccupations :
 
 #### 1.2 Melange de niveaux d'abstraction
 
-Fichier : `Services/CheckInService.cs`
+Fichier : `Services/Check_In_Service.cs`
 
 La methode `ProcessCheckIn` melange des operations de haut niveau (regles metier)
 avec des details de bas niveau (manipulation de cache, notifications directes).

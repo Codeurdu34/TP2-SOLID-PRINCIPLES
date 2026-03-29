@@ -58,14 +58,14 @@ cancellationService.CancelReservation(aliceReservation, new DateTime(2025, 6, 10
 Console.WriteLine();
 
 // ---------------------------------------------------------------
-// Scenario 4: Check-In / Check-Out (uses CheckInService — SRP violation)
+// Scenario 4: Check-In / Check-Out (uses Check_In_Service — SRP violation)
 // ---------------------------------------------------------------
 Console.WriteLine("--- Scenario 4: Check-In / Check-Out ---");
 var bobReservation = reservationService.GetReservation(id2)!;
-var checkInService = new CheckInService(new Dictionary<string, Reservation>());
-checkInService.ProcessCheckIn(bobReservation);
+var Check_In_Service = new Check_In_Service(new Dictionary<string, Reservation>());
+Check_In_Service.ProcessCheckIn(bobReservation);
 Console.WriteLine($"[OK] {bobReservation.GuestName} checked in to Room {bobReservation.RoomId}");
-checkInService.ProcessCheckOut(bobReservation);
+Check_In_Service.ProcessCheckOut(bobReservation);
 Console.WriteLine($"[OK] {bobReservation.GuestName} checked out from Room {bobReservation.RoomId}");
 Console.WriteLine();
 

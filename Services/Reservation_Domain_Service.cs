@@ -6,10 +6,10 @@ using HotelReservation.Repositories;
 
 public class Reservation_Domain_Service
 {
-    private readonly RoomRepository _rooms;
+    private readonly Room_Repository _rooms;
     private readonly Reservation_Repository _reservations;
 
-    public Reservation_Domain_Service(RoomRepository rooms, Reservation_Repository reservations)
+    public Reservation_Domain_Service(Room_Repository rooms, Reservation_Repository reservations)
     {
         _rooms = rooms;
         _reservations = reservations;
